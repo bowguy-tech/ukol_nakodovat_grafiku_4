@@ -1,0 +1,187 @@
+body {
+    font-family: 'Roboto';
+    margin: 0px;
+}
+
+.center {
+    max-width: 1100px;
+    margin: 0px auto;
+}
+
+header {
+    display: flex;
+    padding: 23px;
+}
+
+h2 {
+    width: fit-content;
+    margin: 0px;
+}
+
+nav {
+    margin-left: auto; 
+}
+
+ul {
+    padding: 0px;
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+    margin: 0px;
+    font-size: smaller;
+    font-weight: bolder;
+}
+
+li {    
+    display: block;
+    text-align: center;
+    padding-top: 7px;
+}
+
+.welcome {
+    background-image: url("img/starter-content/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:left bottom;
+    min-height: 95vh;
+    padding: auto;
+}
+
+.welcome-block {
+    margin: auto;
+    text-align: center;
+    padding-top: 150px;
+    width: 80%;
+}
+
+h3{
+    font-size: 70px;    
+    font-weight: bolder;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+p {
+    line-height: 30px;
+}
+
+button {
+    height: 50px;
+    padding: 0px 20px;
+    margin: 4px;
+    font-weight: bold;
+    font-size: medium;
+    background-color: #FCAF3B;
+    border: none;
+}
+
+button:hover {
+    color: white;
+    background-color: #B27231;
+}
+
+.white-button {
+    background-color: white;
+    border: 2px solid black;    
+}
+
+.white-button:hover {
+    background-color: #292C31;
+    border-color: #292C31;
+}
+
+.promiseces {
+    display: flex;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.promise p:nth-child(2) {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.reply {
+    padding: 40px;
+    color:black;
+    margin: none;
+}
+
+.reply p:nth-child(1) {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.gray {
+    background-color: #EDEDED;
+}
+
+.black {
+    background-color: #15161B;
+    color: white;
+}
+
+.row {
+    display: flex;
+    padding: 60px;
+    gap: 50px;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+.text p:nth-child(1) {
+    font-size: 50px;  
+    font-weight: bolder;
+    line-height: 60px;
+}
+
+.together {
+    text-align: center;
+    padding: 100px;
+}
+
+a {
+    color: black;
+}
+
+.quotes div img {
+    width: 80px;
+    border-radius: 40px;
+}
+
+#hamburger {
+    display: none;
+}
+
+@media (max-width: 520px) {
+
+    li {    
+        display: none;
+    }
+    #hamburger {
+        display: block;
+        padding: 10px;
+        border:  1px solid black;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .promiseces {
+        flex-direction: column;
+    }
+
+    img {
+        width: 100%;
+        height: auto;   
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+}
